@@ -4,6 +4,7 @@
 .button {
   display: inline-block;
   border-radius: v.$radius-base;
+  font-family: v.$font-family-base;
   font-size: v.$font-size-s;
   line-height: v.$line-height-s;
   font-weight: v.$font-weight-normal;

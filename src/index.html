@@ -138,25 +138,27 @@
 
     <!-- Contact Form -->
     <section class="contact">
-      <h2 class="contact__title">Need help?</h2>
+      <h2 class="contact__title h2-desktop">Need help?</h2>
       <form class="contact__form">
-        <label class="contact__field">
-          <span class="contact__label">Name</span>
-          <input type="text" name="name" required>
-        </label>
-        <label class="contact__field">
-          <span class="contact__label">Number</span>
-          <input type="tel" name="phone">
-        </label>
+        <div class="contact__person">
+          <label class="contact__field">
+            <span class="contact__label body-text-large">Name</span>
+            <input type="text" name="name" placeholder="Enter name" required>
+          </label>
+          <label class="contact__field">
+            <span class="contact__label body-text-large">Number</span>
+            <input type="tel" name="phone" placeholder="Enter Number">
+          </label>
+        </div>
         <label class="contact__field">
           <span class="contact__label">Email</span>
-          <input type="email" name="email" required>
+          <input type="email" name="email" placeholder="Enter email" required>
         </label>
         <label class="contact__field">
-          <span class="contact__label">Message</span>
-          <textarea name="message" rows="4"></textarea>
+          <span class="contact__label body-text-large">Message</span>
+          <textarea name="message" rows="4" placeholder="Enter message"></textarea>
         </label>
-        <button type="submit" class="button contact__submit">Submit</button>
+        <button type="submit" class="button button--dark contact__submit">Submit</button>
       </form>
     </section>
   </main>
@@ -166,8 +168,8 @@
     <div class="footer__container">
       <nav class="footer__nav">
         <div class="footer__column">
-          <h3 class="footer__heading">Resources</h3>
-          <ul class="footer__links">
+          <p class="footer__heading body-text-large">Resources</p>
+          <ul class="footer__links body-text-medium">
             <li><a href="#">Find a Store</a></li>
             <li><a href="#">Nike Journal</a></li>
             <li><a href="#">Become a Member</a></li>
@@ -176,7 +178,7 @@
           </ul>
         </div>
         <div class="footer__column">
-          <h3 class="footer__heading">Help</h3>
+          <p class="footer__heading body-text-large">Help</p>
           <ul class="footer__links">
             <li><a href="#">Get Help</a></li>
             <li><a href="#">Order Status</a></li>
@@ -186,7 +188,7 @@
           </ul>
         </div>
         <div class="footer__column">
-          <h3 class="footer__heading">Company</h3>
+          <p class="footer__heading body-text-large">Company</p>
           <ul class="footer__links">
             <li><a href="#">About Nike</a></li>
             <li><a href="#">News</a></li>
@@ -196,7 +198,7 @@
           </ul>
         </div>
         <div class="footer__column">
-          <h3 class="footer__heading">Menu</h3>
+          <p class="footer__heading body-text-large">Menu</p>
           <ul class="footer__links">
             <li><a href="#">New & Featured</a></li>
             <li><a href="#">Men</a></li>
@@ -205,9 +207,9 @@
           </ul>
         </div>
       </nav>
-      <div class="footer__legal">
-        <p>© 2025 Nike, Inc. All rights reserved</p>
+      <div class="footer__legal body-text-medium">       
         <ul class="footer__policies">
+          <li><span class="footer__legal-copyright">© 2025 Nike, Inc. All rights reserved</span></li>
           <li><a href="#">Terms of Use</a></li>
           <li><a href="#">Privacy & Cookie Policy</a></li>
           <li><a href="#">Privacy & Cookie Setting</a></li>

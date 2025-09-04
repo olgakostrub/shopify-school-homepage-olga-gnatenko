@@ -191,66 +191,95 @@
 
 /* Contact */
 .contact {
-  background: v.$color-gray-light;
-  padding: v.$space-xl v.$space-m;
+  background: v.$color-grey-background;
+  padding: 80px 80px 60px 80px;
   text-align: center;
 
+  &__title {
+    color: v.$color-dark;
+    font-weight: v.$font-weight-normal;
+  }
+
   &__form {
-    max-width: 800px;
-    margin: v.$space-l auto 0;
-    display: grid;
-    gap: v.$space-m;
+    padding-top: v.$margin-vertical-l;
+    display: flex;
+    flex-direction: column;
+
+    & input, & textarea {
+        padding: v.$gap-m;
+        border-radius: v.$border-radius;
+        border: 1px solid v.$color-stroke;
+        color: v.$color-gray;
+    }
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   &__field {
     display: flex;
     flex-direction: column;
     text-align: left;
+    flex-grow: 1;
+    padding-right: v.$padding-input-horizontal;
+    padding-bottom: v.$padding-input-vertical;
+
+    & span {
+        padding-bottom: v.$gap-s;
+    }
   }
 
   &__submit {
-    @extend .button--primary !optional;
+    @extend .button--light !optional;
+    width: 120px;
+    margin: 0 auto;
   }
 }
 
 /* Footer */
 .footer {
   background: v.$color-white;
-  border-top: 1px solid v.$color-gray;
-  padding: v.$space-l v.$space-m;
-
-  &__container {
-    @include m.container;
-  }
+  padding: 60px 60px 24px 60px;
 
   &__nav {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: v.$space-l;
+    grid-template-columns: repeat(auto-fit, minmax(v.$product-card-width-desktop, v.$product-card-width-desktop));
+    gap: v.$gap-m;
   }
 
   &__heading {
-    font-weight: bold;
-    margin-bottom: v.$space-s;
+    color: v.$color-dark;
+    margin-bottom: v.$margin-vertical-s;
   }
 
   &__links {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: v.$color-gray;
+
+    & li {
+        margin-bottom: v.$margin-vertical-xs;
+    }
   }
 
   &__legal {
-    margin-top: v.$space-l;
-    font-size: 0.875rem;
-    color: #555;
+    color: v.$color-gray;
+    display: flex;
+    align-items: center;
+
+    & li {
+        margin-right: v.$margin-horizontal-m;
+    }
   }
 
   &__policies {
     display: flex;
-    gap: v.$space-m;
+    align-items: center;
     list-style: none;
     padding: 0;
-    margin: v.$space-s 0 0;
   }
 }
