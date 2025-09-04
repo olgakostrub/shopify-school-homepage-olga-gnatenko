@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: v.$font-family-base;
+  line-height: v.$line-height-base;
+  color: v.$color-dark;
+  background: v.$color-white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.body-text-large {
+  font-size: v.$font-size-s;
+  line-height: v.$line-height-s;
+}
+
+.body-text-medium {
+  font-size: v.$font-size-xs;
+  line-height: v.$line-height-xs;
+}

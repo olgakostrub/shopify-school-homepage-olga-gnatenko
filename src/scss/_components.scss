@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: v.$space-s v.$space-m;
+  border-radius: v.$radius-base;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  &--primary {
+    background: v.$color-black;
+    color: v.$color-white;
+  }
+
+  &--light {
+    background: v.$color-white;
+    color: v.$color-black;
+  }
+}
+
+// Product card
+.product-card {
+  background: v.$color-white;
+  border-radius: v.$radius-base;
+  padding: v.$space-m;
+  box-shadow: v.$shadow-card;
+
+  &__name {
+    margin: v.$space-m 0 v.$space-s;
+  }
+}

@@ -1,0 +1,19 @@
+@use "./variables";
+
+body {
+    margin: 0;
+    font-family: variables.$font-stack;
+    background: variables.$secondary-color;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }

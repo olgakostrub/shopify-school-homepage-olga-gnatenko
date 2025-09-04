@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo">
+        <img src="./images/logo.png" alt="Stellar Soft Logo" class="header__logo-img">
+        Stellar Soft
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">New & Featured</a></li>
+          <li class="header__menu-item"><a href="#">Men</a></li>
+          <li class="header__menu-item"><a href="#">Women</a></li>
+          <li class="header__menu-item"><a href="#">Kids</a></li>
+        </ul>
+      </nav>
+      <button class="header__cart" aria-label="Shopping cart">🛒</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          More than just shoes — it’s a part of your story.
+        </h1>
+        <p class="hero__subtitle">
+          Original sneakers from Nike and other top brands that make every step feel special.
+        </p>
+        <a href="#collection" class="button hero__button">Shop the Collection</a>
+      </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="collection" id="collection">
+      <h2 class="collection__title">Featured Collection</h2>
+      <div class="collection__grid">
+        <article class="product-card">
+          <img src="./images/item_1.png" alt="Nike Streakfly 2" class="product-card__image">
+          <h3 class="product-card__name">Nike Streakfly 2</h3>
+          <p class="product-card__price">$300.00</p>
+        </article>
+        <article class="product-card">
+          <img src="./images/item_2.png" alt="Nike Pegasus Premium" class="product-card__image">
+          <h3 class="product-card__name">Nike Pegasus Premium</h3>
+          <p class="product-card__price">$350.00</p>
+        </article>
+        <article class="product-card">
+          <img src="./images/item_3.png" alt="Nike Pegasus 41" class="product-card__image">
+          <h3 class="product-card__name">Nike Pegasus 41</h3>
+          <p class="product-card__price">$280.00</p>
+        </article>
+        <article class="product-card">
+          <img src="./images/item_4.png" alt="Nike Revolution 7" class="product-card__image">
+          <h3 class="product-card__name">Nike Revolution 7</h3>
+          <p class="product-card__price">$440.00</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2 class="faq__title">Frequently asked questions</h2>
+      <p class="faq__subtitle">Answers to our most frequently asked questions are just one click away.</p>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__question">What are Nike’s delivery options?</summary>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">What is Nike’s returns policy?</summary>
+          <p class="faq__answer">When you shop Nike online, either in the Nike App or on Nike.com, you can return items that are unworn and unwashed ...</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">Where is my Nike order?</summary>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question">How do I find the right size and fit?</summary>
+        </details>
+      </div>
+    </section>
+
+    <!-- Product Highlight -->
+    <section class="highlight">
+      <div class="highlight__gallery">
+        <ul class="highlight__thumbs">
+          <li><img src="./images/thumb_1.png" alt="Nike Air Max Plus side view"></li>
+          <li><img src="./images/thumb_2.png" alt="Nike Air Max Plus top view"></li>
+          <li><img src="./images/thumb_3.png" alt="Nike Air Max Plus sole view"></li>
+          <li><img src="./images/thumb_4.png" alt="Nike Air Max Plus double view"></li>
+          <li><img src="./images/thumb_5.png" alt="Nike Air Max Plus close view"></li>          
+        </ul>
+        <img src="./images/product_img.png" alt="Nike Air Max Plus main image" class="highlight__main">
+      </div>
+      <div class="highlight__details">
+        <h2 class="highlight__name">Nike Air Max Plus</h2>
+        <p class="highlight__price">$280.00</p>
+        <div class="highlight__colors">
+          <img src="./images/color_1.png" alt="White version">
+          <img src="./images/color_2.png" alt="Black version">
+          <img src="./images/color_3.png" alt="Purple version" class="highlight__color--active">
+        </div>
+        <fieldset class="highlight__sizes">
+          <legend>Select Size</legend>
+          <button class="highlight__size">UK 5.5</button>
+          <button class="highlight__size">UK 6</button>
+          <button class="highlight__size highlight__size--active">UK 6.5</button>
+          <button class="highlight__size">UK 7</button>
+        </fieldset>
+        <button class="button highlight__button">Add To Bag</button>
+        <p class="highlight__description">
+          Let your attitude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbelievable cushioning.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2 class="contact__title">Need help?</h2>
+      <form class="contact__form">
+        <label class="contact__field">
+          <span class="contact__label">Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label class="contact__field">
+          <span class="contact__label">Number</span>
+          <input type="tel" name="phone">
+        </label>
+        <label class="contact__field">
+          <span class="contact__label">Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label class="contact__field">
+          <span class="contact__label">Message</span>
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="button contact__submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <div class="footer__column">
+          <h3 class="footer__heading">Resources</h3>
+          <ul class="footer__links">
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Nike Journal</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Promo Codes</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Help</h3>
+          <ul class="footer__links">
+            <li><a href="#">Get Help</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping and Delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="#">About Nike</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__heading">Menu</h3>
+          <ul class="footer__links">
+            <li><a href="#">New & Featured</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__legal">
+        <p>© 2025 Nike, Inc. All rights reserved</p>
+        <ul class="footer__policies">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy & Cookie Policy</a></li>
+          <li><a href="#">Privacy & Cookie Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

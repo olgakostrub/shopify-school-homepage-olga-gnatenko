@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+.h1-desktop {
+    font-size: v.$font-size-xl;
+    line-height: v.$line-height-xl;
+}
+
+.h2-desktop {
+    font-size: v.$font-size-l;
+    line-height: v.$line-height-l;
+}

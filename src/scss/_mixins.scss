@@ -1,0 +1,28 @@
+@use 'variables' as v;
+
+// Responsive breakpoints
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $breakpoint == medium {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $breakpoint == large {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+// Flexbox helper
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Container
+@mixin container {
+  max-width: v.$max-width;
+  margin: 0 auto;
+  padding: 0 v.$space-m;
+}
