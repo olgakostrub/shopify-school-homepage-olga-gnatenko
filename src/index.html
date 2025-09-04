@@ -104,33 +104,50 @@
 
     <!-- Product Highlight -->
     <section class="highlight">
-      <div class="highlight__gallery">
+      <!-- <div class="highlight__gallery"> -->
         <ul class="highlight__thumbs">
-          <li><img src="./images/purple_thumb_1.png" alt="Nike Air Max Plus side view"></li>
-          <li><img src="./images/purple_thumb_2.png" alt="Nike Air Max Plus top view"></li>
-          <li><img src="./images/purple_thumb_3.png" alt="Nike Air Max Plus sole view"></li>
-          <li><img src="./images/purple_thumb_4.png" alt="Nike Air Max Plus double view"></li>
-          <li><img src="./images/purple_thumb_5.png" alt="Nike Air Max Plus close view"></li>          
+          <li class="highlight__thumb-item active-item"><img src="./images/purple_thumb_1.png" alt="Nike Air Max Plus side view"></li>
+          <li class="highlight__thumb-item"><img src="./images/purple_thumb_2.png" alt="Nike Air Max Plus top view"></li>
+          <li class="highlight__thumb-item"><img src="./images/purple_thumb_3.png" alt="Nike Air Max Plus sole view"></li>
+          <li class="highlight__thumb-item"><img src="./images/purple_thumb_4.png" alt="Nike Air Max Plus double view"></li>
+          <li class="highlight__thumb-item"><img src="./images/purple_thumb_5.png" alt="Nike Air Max Plus close view"></li>          
         </ul>
-        <img src="./images/product_img.png" alt="Nike Air Max Plus main image" class="highlight__main">
+      <!-- </div> -->
+      <div class="highlight__main">
+        <div class="highlight__rating body-text-medium">
+          <span class="highlight__rating-star">&#9733;</span>
+          <span class="highlight__rating-text">Highly Rated</span>
+        </div>
+        <img src="./images/product_img.png" alt="Nike Air Max Plus main image" class="highlight__main-image">
       </div>
       <div class="highlight__details">
-        <h2 class="highlight__name">Nike Air Max Plus</h2>
-        <p class="highlight__price">$280.00</p>
+        <h2 class="highlight__name h2-desktop">Nike Air Max Plus</h2>
+        <p class="highlight__price body-text-medium">$280.00</p>
         <div class="highlight__colors">
-          <img src="./images/color_1.png" alt="White version">
-          <img src="./images/color_2.png" alt="Black version">
-          <img src="./images/color_3.png" alt="Purple version" class="highlight__color--active">
+          <div class="highlight__color-image">
+            <img src="./images/color_1.png" alt="White version">
+          </div>
+          <div class="highlight__color-image">
+            <img src="./images/color_2.png" alt="Black version">
+          </div>
+          <div class="highlight__color-image highlight__color-image--active">
+            <img src="./images/color_3.png" alt="Purple version">
+          </div>                    
         </div>
-        <fieldset class="highlight__sizes">
-          <legend>Select Size</legend>
-          <button class="highlight__size">UK 5.5</button>
-          <button class="highlight__size">UK 6</button>
-          <button class="highlight__size highlight__size--active">UK 6.5</button>
-          <button class="highlight__size">UK 7</button>
-        </fieldset>
-        <button class="button highlight__button">Add To Bag</button>
-        <p class="highlight__description">
+        <div class="highlight__sizes-selector">
+          <legend class="body-text-medium">Select Size:</legend>
+          <fieldset class="highlight__sizes">
+            <div class="highlight__size">UK 5.5</div>
+            <div class="highlight__size highlight__size--active">UK 6 (EU 39)</div>
+            <div class="highlight__size">UK 6 (EU 40)</div>
+            <div class="highlight__size">UK 6.5</div>
+            <div class="highlight__size">UK 7</div>
+            <div class="highlight__size">UK 7.5</div>
+          </fieldset>
+        </div>
+
+        <button class="button highlight__button button--dark">Add To Bag</button>
+        <p class="highlight__description body-text-medium">
           Let your attitude have the edge in your Nike Air Max Plus, a Tuned Air experience that offers premium stability and unbelievable cushioning.
         </p>
       </div>

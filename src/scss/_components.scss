@@ -10,7 +10,7 @@
   font-weight: v.$font-weight-normal;
   cursor: pointer;
   text-align: center;
-  padding: v.$padding-button-vertical v.$padding-button-horizontal;
+  padding: 12px 3px;
 
   &--dark {
     background: v.$color-dark;
@@ -34,23 +34,23 @@
 // Product card
 .product-card {
   background: v.$color-white;
-  border-radius: v.$product-card-border-radius;
+  border-radius: v.$border-radius;
 
   &__image {
-    width: v.$product-card-width-desktop;
-    height: v.$product-card-height-desktop;
-    border-radius: v.$product-card-border-radius;
-    filter: brightness(70%);
+    width: 312px;
+    height: 312px;
+    border-radius: v.$border-radius;
+    filter: brightness(80%);
   }
 
   &__name {
-    margin-top: v.$product-card-margin-vertical;
+    margin-top: 8px;
     color: v.$color-dark;
     text-align: left;
   }
 
   &__price {
-    margin-top: v.$product-card-margin-vertical;
+    margin-top: v.$margin-vertical-s;
     color: v.$color-gray;
     text-align: left;
   }

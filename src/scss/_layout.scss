@@ -6,7 +6,6 @@
   background: v.$color-white;
 
   &__container {
-    // @include m.container;
     padding: 30px 60px;
     display: flex;
     align-items: center;
@@ -29,7 +28,6 @@
 
   &__menu {
     display: flex;
-    gap: v.$space-l;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -70,7 +68,7 @@
   }
 
   &__button {
-    width: v.$slider-button-width;
+    width: 220px;
   }
 }
 
@@ -81,8 +79,8 @@
 
   &__grid {
     display: grid;
-    gap: v.$product-item-gap;
-    grid-template-columns: repeat(auto-fit, minmax(v.$product-card-width-desktop, v.$product-card-width-desktop));
+    gap: v.$gap-m;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 312px));
   }
 }
 
@@ -90,7 +88,7 @@
 .faq {
   background: v.$color-grey-background;
   text-align: center;
-  padding: v.$padding-faq-vertical v.$padding-faq-horizontal;
+  padding: 80px 60px;
 
   &__subtitle {
     color: v.$color-gray;
@@ -98,7 +96,7 @@
 
   &__list {
     text-align: left;
-    max-width: v.$details-max-width;
+    max-width: 872px;
     margin: 0 auto;
     padding: v.$padding-vertical 0;
   }
@@ -112,7 +110,7 @@
 
   details {
     border-radius: v.$border-radius;
-    padding: v.$padding-summary-vertical v.$padding-summary-horizontal;
+    padding: 24px 24px;
   }
   
   summary {
@@ -146,46 +144,125 @@
 /* Highlight */
 .highlight {
   display: grid;
-  gap: v.$space-l;
-  @include m.container;
-  margin: v.$space-xl auto;
-  padding: v.$space-m;
-  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  grid-template-columns: 88px 1fr 1fr;
+  background-color: v.$color-white;
+  padding: 80px 60px 24px;
+
+  &__main {
+    position: relative;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin: 0;
+  }
 
   &__thumbs {
     list-style: none;
     padding: 0;
-    margin: 0 0 v.$space-m;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: v.$space-m;
+    justify-content: space-between;
+  }
+
+  &__thumb-item {
+    cursor: pointer;
+  }
+
+  & li.active-item {
+    filter: brightness(80%);
+  }
+
+  &__main-image {
+    border-radius: v.$border-radius;
+    width: 100%;
+  }
+
+  &__rating {
+    color: v.$color-dark;
+    background-color: v.$color-white;
+    border-radius: v.$border-radius;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 4px 8px 4px 12px;
+  }
+
+  &__rating-text {
+    padding-left: 4px;
+  }
+
+  &__price {
+    color: v.$color-gray;
+    margin: 0;
+  }
+
+  &__colors {
+    display: flex;
+    gap: v.$gap-s;
+  }
+
+  &__color-image {
+    border-radius: v.$border-radius;
+    overflow: hidden;
+
+    & img {
+        width: 88px;
+        height: 88px;
+    }
+
+    &--active {
+        border: 1px solid v.$color-dark;
+    }    
   }
 
   &__sizes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: v.$space-s;
     border: none;
-    margin: v.$space-m 0;
+    color: v.$color-dark;
+    padding: 0;
+
+    display: grid;
+    gap: v.$gap-s;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 190px));   
+    justify-content: space-evenly;     
+  }
+
+  &__sizes-selector {
+    padding-bottom: 8px;
   }
 
   &__size {
+    width: 190px;
+    height: 52px;
     border: 1px solid v.$color-gray;
-    padding: v.$space-s v.$space-m;
-    border-radius: v.$radius-base;
+    border-radius: v.$border-radius;
     background: v.$color-white;
     cursor: pointer;
+    text-align: center;
+    line-height: 52px;
+    border: 1px solid v.$color-stroke;
 
     &--active {
-      border-color: v.$color-black;
-      font-weight: bold;
+      border: 1px solid v.$color-dark;
     }
   }
 
   &__button {
     width: 100%;
-    @extend .button--primary !optional;
-    padding: v.$space-m;
+    @extend .button--dark !optional;
+  }
+
+  &__description {
+    color: v.$color-gray;
   }
 }
 
@@ -204,6 +281,8 @@
     padding-top: v.$margin-vertical-l;
     display: flex;
     flex-direction: column;
+    max-width: 872px;
+    margin: 0 auto;
 
     & input, & textarea {
         padding: v.$gap-m;
@@ -224,8 +303,8 @@
     flex-direction: column;
     text-align: left;
     flex-grow: 1;
-    padding-right: v.$padding-input-horizontal;
-    padding-bottom: v.$padding-input-vertical;
+    padding-right: 24px;
+    padding-bottom: 24px;
 
     & span {
         padding-bottom: v.$gap-s;
@@ -246,7 +325,7 @@
 
   &__nav {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(v.$product-card-width-desktop, v.$product-card-width-desktop));
+    grid-template-columns: repeat(auto-fit, minmax(312px, 312px));
     gap: v.$gap-m;
   }
 
@@ -270,6 +349,7 @@
     color: v.$color-gray;
     display: flex;
     align-items: center;
+    padding-top: 24px;
 
     & li {
         margin-right: v.$margin-horizontal-m;

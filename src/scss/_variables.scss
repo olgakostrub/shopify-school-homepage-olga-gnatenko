@@ -16,12 +16,6 @@ $max-width: 1200px;
 $radius-base: 0.5rem;
 $shadow-card: 0 2px 6px rgba(0, 0, 0, 0.05);
 
-// Spacing
-$space-xl: 3rem;
-$space-l: 2rem;
-$space-m: 1rem;
-$space-s: 0.5rem;
-
 // Font sizes
 $font-size-xl: 48px;
 $font-size-l: 30px;
@@ -46,10 +40,11 @@ $font-weight-xs: 100;
 
 // Sizes
 $border-radius: 8px;
-$slider-button-width: 220px;
+// $slider-button-width: 220px;
 $padding-horizontal: 60px;
 $padding-vertical: 48px;
 $margin-vertical-l: 24px;
+$margin-vertical-m: 12px;
 $margin-vertical-s: 8px;
 $margin-vertical-xs: 5px;
 $margin-horizontal-s: 8px;
@@ -58,30 +53,3 @@ $margin-horizontal-l: 32px;
 $gap-l: 32px;
 $gap-m: 16px;
 $gap-s: 8px;
-
-// Product Card 
-$product-item-gap: 16px;
-$product-card-width-desktop: 312px;
-$product-card-height-desktop: 312px;
-$product-cols-desktop: 4;
-$product-card-border-radius: 8px;
-$product-card-margin-vertical: 8px;
-
-// Button
-$padding-button-vertical: 12px;
-$padding-button-horizontal: 3px;
-
-// FAQ
-$padding-faq-vertical: 80px;
-$padding-faq-horizontal: 60px;
-$padding-summary-vertical: 24px;
-$padding-summary-horizontal: 24px;
-$details-max-width: 872px;
-
-// Contacts 
-$padding-input-horizontal: 24px;
-$padding-input-vertical: 24px;
-
-
-// Footer
-$footer-section-width: 312px;
