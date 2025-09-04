@@ -5,6 +5,7 @@ $color-white: #FFFFFF;
 $color-gray-light: #CACACB;
 $color-gray: #737373;
 $color-stroke: #EBEBEB;
+$color-grey-background: #F5F5F5;
 
 // Typography
 $font-family-base: 'Poppins', sans-serif;
@@ -27,10 +28,44 @@ $font-size-l: 30px;
 $font-size-m: 24px;
 $font-size-s: 16px;
 $font-size-xs: 14px;
+$font-size-xxs: 10px;
 
 // Line height sizes 
-$line-height-xl: 48;
-$line-height-l: 36;
-$line-height-m: 32;
-$line-height-s: 24;
-$line-height-xs: 20;
+$line-height-xl: 48px;
+$line-height-l: 36px;
+$line-height-m: 32px;
+$line-height-s: 24px;
+$line-height-xs: 20px;
+
+// Font weights
+$font-weight-xl: 700;
+$font-weight-l: 600;
+$font-weight-normal: 400;
+$font-weight-s: 300;
+$font-weight-xs: 100;
+
+// Sizes
+$border-radius: 8px;
+$slider-button-width: 220px;
+$padding-horizontal: 60px;
+$padding-vertical: 48px;
+$margin-vertical-s: 8px;
+
+// Product Card 
+$product-item-gap: 16px;
+$product-card-width-desktop: 312px;
+$product-card-height-desktop: 312px;
+$product-cols-desktop: 4;
+$product-card-border-radius: 8px;
+$product-card-margin-vertical: 8px;
+
+// Button
+$padding-button-vertical: 12px;
+$padding-button-horizontal: 3px;
+
+// FAQ
+$padding-faq-vertical: 80px;
+$padding-faq-horizontal: 60px;
+$padding-summary-vertical: 24px;
+$padding-summary-horizontal: 24px;
+$details-max-width: 872px;

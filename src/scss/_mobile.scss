@@ -3,9 +3,11 @@
 .h1-mobile {
     font-size: v.$font-size-l;
     line-height: v.$line-height-l;
+    font-weight: v.$font-weight-xl;
 }
 
 .h2-mobile {
     font-size: v.$font-size-m;
     line-height: v.$line-height-m;
+    font-weight: v.$font-weight-normal;
 }

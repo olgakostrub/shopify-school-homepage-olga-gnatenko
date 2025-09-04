@@ -4,14 +4,27 @@
 /* Header */
 .header {
   background: v.$color-white;
-  border-bottom: 1px solid v.$color-gray;
 
   &__container {
-    @include m.container;
-    padding: v.$space-m;
+    // @include m.container;
+    padding: 30px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+        margin-right: 5px;
+    }
+
+    &-text {
+        font-size: v.$font-size-xxs;
+        font-weight: v.$font-weight-l;
+    }
   }
 
   &__menu {
@@ -22,8 +35,15 @@
     padding: 0;
   }
 
-  &__logo-img {
-    
+  &__menu-item {
+    font-size: v.$font-size-s;
+    color: v.$color-dark;
+  }
+
+  &__cart {
+    border: none;
+    background-color: v.$color-white;
+    cursor: pointer;
   }
 }
 
@@ -31,51 +51,95 @@
 .hero {
   background: url('../images/hero-bg.png') center/cover no-repeat;
   color: v.$color-white;
-  padding: v.$space-xl v.$space-m;
+  height: 750px;
+  padding-left: v.$padding-horizontal;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 648px;
+  }
 
   &__title {
-    font-size: 2.5rem;
-    max-width: 600px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: v.$font-size-s;
+    line-height: v.$line-height-s;
   }
 
   &__button {
-    margin-top: v.$space-m;
-    @extend .button--light !optional;
+    width: v.$slider-button-width;
   }
 }
 
 /* Collection */
 .collection {
-  padding: v.$space-xl v.$space-m;
+  padding: v.$padding-vertical v.$padding-horizontal;
   text-align: center;
 
   &__grid {
-    @include m.container;
-    margin: v.$space-l auto 0;
     display: grid;
-    gap: v.$space-l;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: v.$product-item-gap;
+    grid-template-columns: repeat(auto-fit, minmax(v.$product-card-width-desktop, v.$product-card-width-desktop));
   }
 }
 
 /* FAQ */
 .faq {
-  background: v.$color-gray-light;
-  padding: v.$space-xl v.$space-m;
+  background: v.$color-grey-background;
   text-align: center;
+  padding: v.$padding-faq-vertical v.$padding-faq-horizontal;
+
+  &__subtitle {
+    color: v.$color-gray;
+  }
 
   &__list {
-    max-width: 800px;
-    margin: v.$space-l auto 0;
     text-align: left;
+    max-width: v.$details-max-width;
+    margin: 0 auto;
+    padding: v.$padding-vertical 0;
   }
 
   &__item {
     background: v.$color-white;
-    margin-bottom: v.$space-m;
-    border: 1px solid v.$color-gray;
-    border-radius: v.$radius-base;
-    padding: v.$space-m;
+    border-radius: v.$border-radius;
+    margin-bottom: v.$margin-vertical-s;
+    border: 1px solid v.$color-stroke;
+  }
+
+  details {
+    border-radius: v.$border-radius;
+    padding: v.$padding-summary-vertical v.$padding-summary-horizontal;
+  }
+  
+  summary {
+    list-style: none;           
+    cursor: pointer;
+    position: relative;
+    color: v.$color-dark;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none; 
+  }
+  
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  details[open] summary::after {
+    content: "−";    
+  }
+
+  &__answer {
+    color: v.$color-gray;
   }
 }
 

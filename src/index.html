@@ -9,9 +9,13 @@
   <!-- Header -->
   <header class="header">
     <div class="header__container">
-      <a href="/" class="header__logo">
-        <img src="./images/logo.png" alt="Stellar Soft Logo" class="header__logo-img">
-        Stellar Soft
+      <a href="/" class="header__logo" aria-label="Stellar Soft home">
+          <svg class="header__logo-icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.76731 23.6845C4.69075 23.7246 4.59719 23.7234 4.52184 23.6785C4.4465 23.6347 4.3991 23.5545 4.39667 23.467C4.36629 21.0038 4.55829 7.94509 11.7074 0.244277C11.852 0.0887296 12.0537 0 12.2652 0C12.4766 0.00121521 12.6796 0.0887296 12.823 0.244277C19.949 7.94995 20.1604 21.0013 20.1337 23.4658C20.1313 23.5533 20.0851 23.6335 20.0085 23.6785C19.9332 23.7222 19.8408 23.7247 19.7631 23.6833C18.4032 22.9688 13.6202 20.4545 12.5009 19.8663C12.3539 19.7886 12.1777 19.7886 12.0306 19.8663C10.9102 20.4545 6.12713 22.97 4.76731 23.6845ZM12.2664 9.9733C13.5946 9.9733 14.6713 11.05 14.6713 12.3794C14.6713 13.7077 13.5946 14.7843 12.2664 14.7843C10.9369 14.7843 9.86027 13.7077 9.86027 12.3794C9.86027 11.05 10.9369 9.9733 12.2664 9.9733Z" fill="#313131"/>
+            <path d="M4.91679 8.13225C5.00428 8.1201 5.09178 8.15411 5.14768 8.22216C5.20358 8.29021 5.22059 8.38259 5.19142 8.46644C4.75152 9.74241 4.34684 11.1581 4.00293 12.7233C3.98349 12.8132 3.91665 12.8861 3.82794 12.9117C3.74044 12.9384 3.64444 12.9153 3.57882 12.8509C2.88129 12.1704 1.2359 10.5675 0.27467 9.63058C0.136136 9.49569 0.0862927 9.29397 0.145838 9.11169C0.205384 8.92819 0.364591 8.79454 0.55538 8.76659C1.84594 8.57944 4.01388 8.2635 4.91679 8.13225Z" fill="#313131"/>
+            <path d="M23.9762 8.76659C24.167 8.79454 24.3262 8.92819 24.3857 9.11169C24.4453 9.29397 24.3955 9.49569 24.2569 9.63058C23.2957 10.5675 21.6515 12.1704 20.954 12.8497C20.8883 12.9141 20.7923 12.9384 20.7048 12.9117C20.6161 12.8849 20.5493 12.8132 20.5299 12.7233C20.1859 11.1581 19.7813 9.74241 19.3414 8.46644C19.3122 8.3838 19.3292 8.29021 19.3851 8.22216C19.441 8.15411 19.5285 8.12007 19.616 8.13344C20.5189 8.26468 22.6869 8.57944 23.9762 8.76659Z" fill="#313131"/>
+          </svg>     
+        <span class="header__logo-text">Stellar Soft</span>
       </a>
       <nav class="header__nav" aria-label="Main navigation">
         <ul class="header__menu">
@@ -21,7 +25,15 @@
           <li class="header__menu-item"><a href="#">Kids</a></li>
         </ul>
       </nav>
-      <button class="header__cart" aria-label="Shopping cart">🛒</button>
+      <a class="header__cart" aria-label="Shopping cart" href="#cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.55514 14.2572C2.83668 10.9043 2.47745 9.22793 3.378 8.11397C4.27855 7 5.99302 7 9.42196 7H14.5781C18.0071 7 19.7215 7 20.6221 8.11397C21.5226 9.22793 21.1634 10.9043 20.4449 14.2572L20.0164 16.2572C19.5294 18.5297 19.2859 19.666 18.4608 20.333C17.6357 21 16.4737 21 14.1495 21H9.85053C7.52639 21 6.36432 21 5.53925 20.333C4.71418 19.666 4.47069 18.5297 3.98372 16.2572L3.55514 14.2572Z" stroke="#111111" stroke-width="1.5"/>
+          <path d="M3 11H21" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 14H14" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 9L15 3" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 9L9 3" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>        
+      </a>
     </div>
   </header>
 
@@ -29,60 +41,63 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__title">
+        <h1 class="hero__title h1-desktop">
           More than just shoes — it’s a part of your story.
         </h1>
         <p class="hero__subtitle">
           Original sneakers from Nike and other top brands that make every step feel special.
         </p>
-        <a href="#collection" class="button hero__button">Shop the Collection</a>
+        <a href="#collection" class="button button--light hero__button">Shop the Collection</a>
       </div>
     </section>
 
-    <!-- Featured Collection -->
-    <section class="collection" id="collection">
-      <h2 class="collection__title">Featured Collection</h2>
+    <!-- Collection -->
+    <section class="collection">
+      <h2 class="collection__title h2-desktop">Featured Collection</h2>
       <div class="collection__grid">
         <article class="product-card">
           <img src="./images/item_1.png" alt="Nike Streakfly 2" class="product-card__image">
-          <h3 class="product-card__name">Nike Streakfly 2</h3>
-          <p class="product-card__price">$300.00</p>
+          <p class="product-card__name body-text-large">Nike Streakfly 2</p>
+          <p class="product-card__price body-text-medium">$300.00</p>
         </article>
         <article class="product-card">
           <img src="./images/item_2.png" alt="Nike Pegasus Premium" class="product-card__image">
-          <h3 class="product-card__name">Nike Pegasus Premium</h3>
-          <p class="product-card__price">$350.00</p>
+          <p class="product-card__name body-text-large">Nike Pegasus Premium</p>
+          <p class="product-card__price body-text-medium">$350.00</p>
         </article>
         <article class="product-card">
           <img src="./images/item_3.png" alt="Nike Pegasus 41" class="product-card__image">
-          <h3 class="product-card__name">Nike Pegasus 41</h3>
-          <p class="product-card__price">$280.00</p>
+          <p class="product-card__name body-text-large">Nike Pegasus 41</p>
+          <p class="product-card__price body-text-medium">$280.00</p>
         </article>
         <article class="product-card">
           <img src="./images/item_4.png" alt="Nike Revolution 7" class="product-card__image">
-          <h3 class="product-card__name">Nike Revolution 7</h3>
-          <p class="product-card__price">$440.00</p>
+          <p class="product-card__name body-text-large">Nike Revolution 7</p>
+          <p class="product-card__price body-text-medium">$440.00</p>
         </article>
       </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq">
-      <h2 class="faq__title">Frequently asked questions</h2>
-      <p class="faq__subtitle">Answers to our most frequently asked questions are just one click away.</p>
+      <h2 class="faq__title h2-desktop">Frequently asked questions</h2>
+      <p class="faq__subtitle body-text-large">Answers to our most frequently asked questions are just one click away.</p>
       <div class="faq__list">
         <details class="faq__item">
           <summary class="faq__question">What are Nike’s delivery options?</summary>
+          <p class="faq__answer body-text-large">Delivery Options</p>
         </details>
         <details class="faq__item">
           <summary class="faq__question">What is Nike’s returns policy?</summary>
-          <p class="faq__answer">When you shop Nike online, either in the Nike App or on Nike.com, you can return items that are unworn and unwashed ...</p>
+          <p class="faq__answer body-text-large">When you shop Nike online, either in the Nike App or on Nike.com, you can return items that are unworn and unwashed and still have their product tags attached within 30 days of purchase (some exceptions apply). That includes custom Nike By You sneakers.</p>
         </details>
         <details class="faq__item">
           <summary class="faq__question">Where is my Nike order?</summary>
+          <p class="faq__answer body-text-large">Nike Order Location</p>
         </details>
         <details class="faq__item">
           <summary class="faq__question">How do I find the right size and fit?</summary>
+          <p class="faq__answer body-text-large">Size and fit guide</p>
         </details>
       </div>
     </section>
@@ -91,11 +106,11 @@
     <section class="highlight">
       <div class="highlight__gallery">
         <ul class="highlight__thumbs">
-          <li><img src="./images/thumb_1.png" alt="Nike Air Max Plus side view"></li>
-          <li><img src="./images/thumb_2.png" alt="Nike Air Max Plus top view"></li>
-          <li><img src="./images/thumb_3.png" alt="Nike Air Max Plus sole view"></li>
-          <li><img src="./images/thumb_4.png" alt="Nike Air Max Plus double view"></li>
-          <li><img src="./images/thumb_5.png" alt="Nike Air Max Plus close view"></li>          
+          <li><img src="./images/purple_thumb_1.png" alt="Nike Air Max Plus side view"></li>
+          <li><img src="./images/purple_thumb_2.png" alt="Nike Air Max Plus top view"></li>
+          <li><img src="./images/purple_thumb_3.png" alt="Nike Air Max Plus sole view"></li>
+          <li><img src="./images/purple_thumb_4.png" alt="Nike Air Max Plus double view"></li>
+          <li><img src="./images/purple_thumb_5.png" alt="Nike Air Max Plus close view"></li>          
         </ul>
         <img src="./images/product_img.png" alt="Nike Air Max Plus main image" class="highlight__main">
       </div>

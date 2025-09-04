@@ -3,31 +3,54 @@
 // Buttons
 .button {
   display: inline-block;
-  padding: v.$space-s v.$space-m;
   border-radius: v.$radius-base;
-  font-weight: bold;
+  font-size: v.$font-size-s;
+  line-height: v.$line-height-s;
+  font-weight: v.$font-weight-normal;
   cursor: pointer;
   text-align: center;
+  padding: v.$padding-button-vertical v.$padding-button-horizontal;
 
-  &--primary {
-    background: v.$color-black;
+  &--dark {
+    background: v.$color-dark;
     color: v.$color-white;
   }
 
   &--light {
     background: v.$color-white;
-    color: v.$color-black;
+    color: v.$color-dark;
   }
+
+  &--light:hover {
+    background: v.$color-gray-light;
+  }
+
+  &--dark:hover {
+    background: v.$color-gray;
+  }  
 }
 
 // Product card
 .product-card {
   background: v.$color-white;
-  border-radius: v.$radius-base;
-  padding: v.$space-m;
-  box-shadow: v.$shadow-card;
+  border-radius: v.$product-card-border-radius;
+
+  &__image {
+    width: v.$product-card-width-desktop;
+    height: v.$product-card-height-desktop;
+    border-radius: v.$product-card-border-radius;
+    filter: brightness(70%);
+  }
 
   &__name {
-    margin: v.$space-m 0 v.$space-s;
+    margin-top: v.$product-card-margin-vertical;
+    color: v.$color-dark;
+    text-align: left;
+  }
+
+  &__price {
+    margin-top: v.$product-card-margin-vertical;
+    color: v.$color-gray;
+    text-align: left;
   }
 }
