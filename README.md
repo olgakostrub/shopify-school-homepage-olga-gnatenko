@@ -38,3 +38,10 @@ dist/ → Compiled output
 5. Deploy to Github pages
     `npm run deploy`
     Deploys the page and makes it available here: https://olgakostrub.github.io/shopify-test-task/
+
+## Comments and Future Improvements
+- Thank you for a great and well-prepared test task! I will definitely complete it in the next days, as I really liked the approach, and want to complete the solution.
+- If I had more time, I would complete other features in the following sequence: add dynamic elements (product highlights, slider, hero, popup) and implement mobile layout
+- I would also split the html layout into smaller html files and bundle them with webpack, and aplit the large SCSS _layout.scss
+
+Big thanks for this opportunity, probably at this point the test task does not have what is needs, but the experience and the process are anyway very rewarding. I do admore the approach your team has chosen to selecting the participants!
