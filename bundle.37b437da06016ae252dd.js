@@ -1,1 +1,0 @@
-(()=>{"use strict";const t=document.getElementsByClassName("highlight");if(t&&t.length>0){const e=t[0];e.addEventListener("click",t=>{const s=t.target.closest(".highlight__thumb-item");if(s&&e.contains(s)){const t=s.querySelector("img");t&t.src&&console.log(t.src),e.querySelectorAll(".highlight__thumb-item").forEach(t=>{t.classList.remove("active-item")})}})}})();
