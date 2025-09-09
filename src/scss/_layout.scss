@@ -48,7 +48,16 @@
 
 /* Hero */
 .hero {
-  background: url('../images/hero-bg.png') center/cover no-repeat;
+  background: url('../images/hero-bg-600.png') center/cover no-repeat;
+
+  @media (max-width: v.$breakpoint-sm) {
+    background-image: url('../images/hero-bg-200.png');
+  }
+
+  @media (min-width: v.$breakpoint-lg) {
+    background-image: url('../images/hero-bg-1200.png');
+  }
+
   color: v.$color-white;
   height: 750px;
   padding-left: v.$padding-horizontal;
@@ -156,6 +165,10 @@
 
   &__main {
     position: relative;
+    width: v.$main-img-size;
+    height: v.$main-img-size;
+    overflow: hidden;
+    border-radius: v.$border-radius;
   }
 
   &__details {
@@ -180,6 +193,17 @@
 
   &__thumb-item {
     cursor: pointer;
+    border-radius: v.$border-radius;
+    width: v.$thumb-size;
+    height: v.$thumb-size;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   & li.active-item {
@@ -189,6 +213,8 @@
   &__main-image {
     border-radius: v.$border-radius;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__rating {

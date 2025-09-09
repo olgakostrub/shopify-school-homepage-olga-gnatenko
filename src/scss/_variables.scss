@@ -40,7 +40,6 @@ $font-weight-xs: 100;
 
 // Sizes
 $border-radius: 8px;
-// $slider-button-width: 220px;
 $padding-horizontal: 60px;
 $padding-vertical: 48px;
 $margin-vertical-l: 24px;
@@ -53,3 +52,11 @@ $margin-horizontal-l: 32px;
 $gap-l: 32px;
 $gap-m: 16px;
 $gap-s: 8px;
+
+// Element sizes
+$thumb-size: 88px;
+$main-img-size: 536px;
+
+// Breakpoints
+$breakpoint-sm: 767px;
+$breakpoint-lg: 1281px;

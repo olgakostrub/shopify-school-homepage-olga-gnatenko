@@ -56,7 +56,7 @@
       <h2 class="collection__title h2-desktop">Featured Collection</h2>
       <div class="collection__grid">
         <article class="product-card">
-          <img src="./images/item_1.png" alt="Nike Streakfly 2" class="product-card__image">
+          <img src="./images/item_1.png" alt="Nike Streakfly 2" class="product-card__image">         
           <p class="product-card__name body-text-large">Nike Streakfly 2</p>
           <p class="product-card__price body-text-medium">$300.00</p>
         </article>
@@ -103,33 +103,51 @@
     </section>
 
     <!-- Product Highlight -->
-    <section class="highlight">
+    <section class="highlight" data-selected-color="3" data-selected-thumb="1">
         <ul class="highlight__thumbs">
-          <li class="highlight__thumb-item active-item"><img src="./images/purple_thumb_1.png" alt="Nike Air Max Plus side view"></li>
-          <li class="highlight__thumb-item"><img src="./images/purple_thumb_2.png" alt="Nike Air Max Plus top view"></li>
-          <li class="highlight__thumb-item"><img src="./images/purple_thumb_3.png" alt="Nike Air Max Plus sole view"></li>
-          <li class="highlight__thumb-item"><img src="./images/purple_thumb_4.png" alt="Nike Air Max Plus double view"></li>
-          <li class="highlight__thumb-item"><img src="./images/purple_thumb_5.png" alt="Nike Air Max Plus close view"></li>          
+          <li class="highlight__thumb-item active-item" data-thumb-number="1">
+            <img src="./images/color3_1-200.png" alt="Product view thumbnail 1">
+          </li>
+          <li class="highlight__thumb-item" data-thumb-number="2">
+            <img src="./images/color3_2-200.png" alt="Product view thumbnail 2">
+          </li>
+          <li class="highlight__thumb-item" data-thumb-number="3">
+            <img src="./images/color3_3-200.png" alt="Product view thumbnail 3">
+          </li>
+          <li class="highlight__thumb-item" data-thumb-number="4">
+            <img src="./images/color3_4-200.png" alt="Product view thumbnail 4">
+          </li>
+          <li class="highlight__thumb-item" data-thumb-number="5">
+            <img src="./images/color3_5-200.png" alt="Product view thumbnail 5">
+          </li>          
         </ul>
       <div class="highlight__main">
         <div class="highlight__rating body-text-medium">
           <span class="highlight__rating-star">&#9733;</span>
           <span class="highlight__rating-text">Highly Rated</span>
         </div>
-        <img src="./images/product_img.png" alt="Nike Air Max Plus main image" class="highlight__main-image">
+        <img 
+          class="highlight__main-image" 
+          src="./images/color3_1-600.png" 
+          srcset="./images/color3_1-600.png 600w,
+            ./images/color3_1-1200.png 1200w"
+          sizes="(max-width: 768px) 600px,
+            1200px"              
+          alt="Nike Air Max Plus main image"
+        >
       </div>
       <div class="highlight__details">
         <h2 class="highlight__name h2-desktop">Nike Air Max Plus</h2>
         <p class="highlight__price body-text-medium">$280.00</p>
         <div class="highlight__colors">
           <div class="highlight__color-image">
-            <img src="./images/color_1.png" alt="White version">
+            <img src="./images/color_1.png" alt="Color 1 Selector">
           </div>
           <div class="highlight__color-image">
-            <img src="./images/color_2.png" alt="Black version">
+            <img src="./images/color_2.png" alt="Color 2 Selector">
           </div>
           <div class="highlight__color-image highlight__color-image--active">
-            <img src="./images/color_3.png" alt="Purple version">
+            <img src="./images/color_3.png" alt="Color 3 Selector">
           </div>                    
         </div>
         <div class="highlight__sizes-selector">
@@ -154,11 +172,11 @@
     <!-- Contact Form -->
     <section class="contact">
       <h2 class="contact__title h2-desktop">Need help?</h2>
-      <form class="contact__form">
+      <form class="contact__form" id="contact">
         <div class="contact__person">
           <label class="contact__field">
             <span class="contact__label body-text-large">Name</span>
-            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="text" name="name" placeholder="Enter name">
           </label>
           <label class="contact__field">
             <span class="contact__label body-text-large">Number</span>
@@ -167,13 +185,15 @@
         </div>
         <label class="contact__field">
           <span class="contact__label">Email</span>
-          <input type="email" name="email" placeholder="Enter email" required>
+          <input type="email" name="email" placeholder="Enter email">
         </label>
         <label class="contact__field">
           <span class="contact__label body-text-large">Message</span>
           <textarea name="message" rows="4" placeholder="Enter message"></textarea>
         </label>
-        <button type="submit" class="button button--dark contact__submit">Submit</button>
+        <button id="contact-submit" type="submit" class="button button--dark contact__submit">Submit</button>
+        <!-- <button id="contact-submit" type="button" class="button button--dark contact__submit">Submit</button> -->
+
       </form>
     </section>
   </main>
