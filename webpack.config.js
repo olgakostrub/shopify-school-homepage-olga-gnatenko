@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.[contenthash].js",
     clean: true,
-    publicPath: '/'
+    // publicPath: '/'
   },
   module: {
     rules: [
@@ -23,7 +23,7 @@ module.exports = {
       {
         test: /\.html$/,
         use: ["html-loader"]
-      },
+      },      
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource",

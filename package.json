@@ -7,15 +7,17 @@
         "build": "webpack --mode production",
         "clean": "rm -rf dist",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"        
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "css-loader": "^7.1.2",
         "gh-pages": "^6.3.0",
         "html-webpack-plugin": "^5.6.0",
         "mini-css-extract-plugin": "^2.9.2",
+        "responsive-loader": "^3.1.2",
         "sass": "^1.79.0",
         "sass-loader": "^16.0.3",
+        "sharp": "^0.34.3",
         "style-loader": "^4.0.0",
         "webpack": "^5.96.1",
         "webpack-cli": "^5.1.4",
